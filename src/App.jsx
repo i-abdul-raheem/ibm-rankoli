@@ -3,6 +3,7 @@ import { useState } from "react";
 import { Toast, ToastContainer } from "react-bootstrap";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Dashboard from "./components/Dashboard";
 import FinishedGoods from "./components/FinishedGoods";
 import Inventory from "./components/Inventory";
 import Login from "./components/Login";
@@ -55,6 +56,13 @@ function App() {
     <div className="app">
       <Sidenav setLogin={setLogin} access={access} />
       <Routes>
+        <Route
+          exact
+          path="/"
+          element={
+            <Dashboard setToast={setToast} setToastMsg={setToastMsg} />
+          }
+        />
         <Route
           exact
           path="/manage_accounts"

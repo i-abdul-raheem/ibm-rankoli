@@ -158,8 +158,16 @@ export default function ManageEmployee(props) {
                     </thead>
                     <tbody>
                       <tr>
-                        <th>Employee Receiveable</th>
-                        <th>Jan 23, 2023</th>
+                        <th>Salary</th>
+                        <th>Dec 1, 2021</th>
+                        <th>Salary</th>
+                        <th>20000</th>
+                        <th>0</th>
+                        <th>20000</th>
+                      </tr>
+                      <tr>
+                        <th>Receiveable</th>
+                        <th>Jan 1, 2023</th>
                         <th>Receiveable</th>
                         <th>20000</th>
                         <th>0</th>

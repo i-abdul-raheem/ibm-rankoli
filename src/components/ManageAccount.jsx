@@ -51,7 +51,7 @@ export default function ManageAccount(props) {
   }
   useEffect(() => {
     updateAccounts();
-  }, []);
+  });
   useEffect(() => {
     setViewFormFields();
   }, [viewModalId])
@@ -151,6 +151,14 @@ export default function ManageAccount(props) {
                         <th>Receiveable</th>
                         <th>20000</th>
                         <th>0</th>
+                        <th>20000</th>
+                      </tr>
+                      <tr>
+                        <th>Account Receiveable</th>
+                        <th>Jan 28, 2023</th>
+                        <th>Receiveable</th>
+                        <th>0</th>
+                        <th>20000</th>
                         <th>20000</th>
                       </tr>
                     </tbody>

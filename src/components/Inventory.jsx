@@ -74,7 +74,7 @@ export default function Inventory(props) {
     updatePurchases();
     updateRawMaterials();
     inventorySetup();
-  }, [refresh]);
+  });
   return (
     <>
       <Container>

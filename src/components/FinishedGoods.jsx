@@ -47,7 +47,7 @@ export default function Inventory(props) {
           prosCount += parseInt(j.amount);
         }
       });
-      mySales[0].map((j) => {
+      mySales.map((j) => {
         if (j.title === myProds[i]) {
           salesCount += parseInt(j.quantity);
         }
@@ -64,7 +64,7 @@ export default function Inventory(props) {
     updateSales();
     updateProducts();
     setup();
-  }, [refresh]);
+  });
   return (
     <>
       <Container>
